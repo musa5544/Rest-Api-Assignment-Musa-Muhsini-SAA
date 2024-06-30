@@ -1,0 +1,115 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #002efb, #d3a9fd);
+    margin: 0;
+    overflow: hidden;
+    /* stops webpage from scrolling */
+}
+
+/* Styleing for main container */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+    animation: fadeIn 1.5s ease-in-out;
+    /* Animation effect on load */
+}
+
+/* w3 code Keyframe for the fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-family: 'Poppins', cursive;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #2d0257;
+}
+
+/* Style for the search box */
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Style for the search box text field outside boarder*/
+input[type="text"] {
+    width: 70%;
+    padding: 15px;
+    border: 2px solid #5d0070;
+    border-radius: 5px 0 0 5px;
+    font-size: 1.2em;
+    outline: none;
+}
+
+/* Style for button */
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background: #4f006b;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background: #8700c5;
+}
+
+
+#data-container {
+    margin-top: 30px;
+    text-align: left;
+    /* Align text */
+    max-width: 100%;
+    background: #d3bfd7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+    font-size: 1.2em;
+    height: 300px;
+    /* Fixed height */
+    overflow-y: auto;
+    /*  vertical scrolling*/
+}
+
+.definition {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ff0000;
+    padding-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.definition:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #ffe1e1;
+}
+
+.definition p {
+    margin: 0;
+}
+
+.definition em {
+    color: #555;
+}
